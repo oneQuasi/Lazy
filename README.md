@@ -16,7 +16,9 @@ To achieve this, Lazy follows the given process:
     - As gentle's website is down, you may need to [copy the "exp" folder from a docker container](https://github.com/lowerquality/gentle/issues/336).
     - Lazy assumes that there's a local directory called `gentle`, and that it has a Python [venv](https://docs.python.org/3/library/venv.html) setup.
 
-2. Create a `config.json5`. An example config is shown below:
+2. Download the assets for `mouths`, `poses` and `mouthCoordinates` from the [lazykh](https://github.com/carykh/lazykh) repository.
+
+3. Create a `config.json5`. An example config is shown below:
 
 ```json5
 {
@@ -36,7 +38,7 @@ To achieve this, Lazy follows the given process:
 }
 ```
 
-3. Run it with this command: `deno run --allow-all src/main.tsx config.json5`
+4. Run it with this command: `deno run --allow-all src/main.tsx config.json5`
 
 ## Compared to `lazykh`
 
