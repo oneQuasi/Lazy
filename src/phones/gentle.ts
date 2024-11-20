@@ -19,9 +19,13 @@ export type GentleTranscript = {
     words: Word[];
 };
 
-export const processPhones = async (audioPath: string) => {
-    const cmd = new Deno.Command("bash", {
-        args: [ "./run-gentle.sh", audioPath ]
+export const processPhones = async (audioPath: string, transcriptPath: string) => {
+    const cmd = new Deno.Command('bash', {
+        args: [ 
+            './run-gentle.sh', 
+            audioPath,
+            transcriptPath
+        ]
     });
 
     const { success, stdout, stderr } = await cmd.output();

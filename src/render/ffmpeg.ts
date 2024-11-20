@@ -2,7 +2,7 @@ export const renderFFmpeg = async (audioPath: string, outDir: string) => {
     const cmd = new Deno.Command('ffmpeg', {
         args: [ 
             '-framerate', '30', 
-            '-i', './output/images/%d.png',
+            '-i', `${outDir}/images/%d.png`,
             '-i', audioPath,
             '-c:v', 'libx264',
             '-pix_fmt', 'yuv420p', 

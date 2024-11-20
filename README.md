@@ -35,3 +35,13 @@ To achieve this, Lazy follows the given process:
 ```
 
 3. Run it with this command: `deno run --allow-all src/main.tsx config.json5`
+
+## Compared to `lazykh`
+
+There are some key differences between this project and its inspiration:
+
+1. `lazykh` requires both an audio file and transcript, whilst `Lazy` only requires an audio file.
+
+2. `lazykh` requires your transcript to be labelled with emotion tags for emotion changes. `Lazy` doesn't, as it automatically detects sentiment.
+
+3. `lazykh` is written in Python, whilst `Lazy` is written in TypeScript (Deno).

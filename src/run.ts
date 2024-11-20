@@ -32,7 +32,7 @@ export const run = async (
 
     const { words } = await logTime(
         'Processing phones...', 
-        processPhones(config.audioPath), 
+        processPhones(config.audioPath, `${config.outDir}/text/transcript.txt`), 
         addLog
     );
 
