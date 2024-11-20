@@ -9,7 +9,7 @@ import { Assembly } from "./transcription/assembly.ts";
 import { logTime } from "./util/log.ts";
 import { draw } from "./drawing/draw.ts";
 import { applyAnalysis } from "./sentiment/index.ts";
-import { GPT } from "./sentiment/emotions.ts";
+import { GPT } from "./sentiment/gpt.ts";
 import chalk from "npm:chalk";
 
 export const run = async (
