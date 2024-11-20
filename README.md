@@ -14,6 +14,8 @@ To achieve this, Lazy follows the given process:
 
 1. Set up [gentle](https://github.com/lowerquality/gentle) for lipsyncing.
     - As gentle's website is down, you may need to [copy the "exp" folder from a docker container](https://github.com/lowerquality/gentle/issues/336).
+    - Lazy assumes that there's a local directory called `gentle`, and that it has a Python [venv](https://docs.python.org/3/library/venv.html) setup.
+
 2. Create a `config.json5`. An example config is shown below:
 
 ```json5
